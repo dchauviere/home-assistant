@@ -18,13 +18,13 @@ from homeassistant.const import (
 from homeassistant.helpers import state
 import homeassistant.helpers.config_validation as cv
 
-REQUIREMENTS = ['elasticsearch==5.4.0']
+REQUIREMENTS = ['elasticsearch==5.5.1']
 
 _LOGGER = logging.getLogger(__name__)
 
 DOMAIN = 'elasticsearch'
 CONF_ESINDICE = 'indice'
-CONF_ESTYPE = 'type'
+CONF_ESTYPE = 'doc'
 
 CONFIG_SCHEMA = vol.Schema({
     DOMAIN: vol.Schema({
@@ -104,9 +104,10 @@ class ElasticsearchFeeder(threading.Thread):
         now = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%f%z')
         things = dict(new_state.attributes)
         try:
-            things['state'] = state.state_as_number(new_state)
+            things['value'] = state.state_as_number(new_state)
         except ValueError:
             pass
+        things['state'] = str(new_state)
 
         data = json.dumps({ '@timestamp': now,
                             'entity_id': entity_id,
