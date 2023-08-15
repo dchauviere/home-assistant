@@ -447,6 +447,7 @@ FLOWS = {
         "twentemilieu",
         "twilio",
         "twinkly",
+        "tydom",
         "ukraine_alarm",
         "unifi",
         "unifiprotect",

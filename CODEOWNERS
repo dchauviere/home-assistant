@@ -1237,6 +1237,8 @@ build.json @home-assistant/supervisor
 /tests/components/twentemilieu/ @frenck
 /homeassistant/components/twinkly/ @dr1rrb @Robbie1221
 /tests/components/twinkly/ @dr1rrb @Robbie1221
+/homeassistant/components/tydom/ @dchauviere
+/tests/components/tydom/ @dchauviere
 /homeassistant/components/ukraine_alarm/ @PaulAnnekov
 /tests/components/ukraine_alarm/ @PaulAnnekov
 /homeassistant/components/unifi/ @Kane610

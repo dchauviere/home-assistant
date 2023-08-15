@@ -5756,6 +5756,12 @@
       "config_flow": false,
       "iot_class": "cloud_push"
     },
+    "tydom": {
+      "name": "Tydom",
+      "integration_type": "hub",
+      "config_flow": true,
+      "iot_class": "local_push"
+    },
     "u_tec": {
       "name": "U-tec",
       "integrations": {

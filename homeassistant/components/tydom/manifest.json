@@ -1,0 +1,18 @@
+{
+  "domain": "tydom",
+  "name": "Tydom",
+  "config_flow": true,
+  "integration_type": "hub",
+  "documentation": "https://www.home-assistant.io/integrations/tydom",
+  "requirements": [],
+  "ssdp": [],
+  "zeroconf": [
+    {"type":"_https._tcp.local.","name":"Delta Dore Gateway"}
+  ],
+  "homekit": {},
+  "dependencies": [],
+  "codeowners": [
+    "@dchauviere"
+  ],
+  "iot_class": "local_push"
+}

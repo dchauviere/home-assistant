@@ -2709,3 +2709,6 @@ zwave-js-server-python==0.44.0
 
 # homeassistant.components.zwave_me
 zwave_me_ws==0.3.0
+
+websocket_client
+
